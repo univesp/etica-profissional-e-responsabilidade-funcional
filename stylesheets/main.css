@@ -235,8 +235,8 @@ text-align: left;
   margin-right: 30px;
 }
 .infografico li:first-of-type .quotes {
-  left: 152%;
-  top: -14%;
+  left: 162%;
+  top: -41%;
 }
 .infografico li:nth-of-type(2) .quotes {
   right: 106%;
@@ -248,7 +248,7 @@ text-align: left;
 }
 .infografico li:nth-of-type(4) .quotes {
   right: 100%;
-  top: -40%;
+  top: -65%;
 }
 /* .infografico li:nth-of-type(5) .quotes {
   left: 100%;
@@ -259,8 +259,8 @@ text-align: left;
   top: 59%;
 }
 .infografico li:nth-of-type(6) .quotes {
-  left: 102%;
-  top: 68%;
+  left: 98%;
+  top: 78%;
 }
 
 
@@ -328,7 +328,7 @@ svg {
 
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1090px) {
   .quotes {
     display: none;
   }
