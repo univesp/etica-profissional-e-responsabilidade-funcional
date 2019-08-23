@@ -1,0 +1,490 @@
+/* CORES
+Azul claro      #29ABFF
+Azul escuro     #2761B2
+Amarelo claro   #FFCC33
+Amarelo escuro  #FFB800
+ */
+
+body {
+  background-color: #FFCC33;
+}
+
+main {
+  justify-content: center;
+}
+
+main p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2761B2;
+  margin-bottom: 4rem;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.container-fluid{
+  padding: 3rem 0;
+}
+
+.intro {
+  background-image: url("../assets/maos.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.infografico {
+  color: white;
+  background-color: #2761B2;
+  border-top: 30px solid #FFB800;
+  border-bottom: 30px solid #FFB800;
+  box-shadow: 0 -5px 10px 0px rgba(0,0,0,0.15);
+  overflow-x: hidden;
+}
+
+.infografico h2 {
+  color: white;
+}
+
+.sua-resposta {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  color: black;
+  border-radius: 0;
+  border: 0;
+  background-color: #E6E6E6;
+  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.15);
+  min-height: 180px;
+}
+
+/* form {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.form-control {
+  color: black;
+  border-radius: 0;
+  border: 0;
+  background-color: #E6E6E6;
+  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.15);
+  padding: 2rem;
+}
+.form-control:focus {
+  background-color: #E6E6E6;
+  color: black;
+} */
+.encerramento .btn-primary {
+  border: 0;
+  border-radius: 0;
+  background-color: #2761B2;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.emoldurado {
+  border-style: solid;
+  border-width: 18px;
+  border-color: #FABB18;
+  background-color: #FABB18;
+  box-shadow: 4px 0px 20px rgba(0,0,0,0.2);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.infografico ul {
+  /* border: 1px solid white; */
+  padding: 0;
+  position: relative;
+  height: 800px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.infografico li {
+  position: absolute;
+  height: 23%;
+  width: 23%;
+  z-index: 100;
+}
+
+.item {
+  background-color: #29ABFF;
+  color: black;
+  border: 7px solid #FFCC33;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  height: 100%;
+  width: 100%;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.item>img {
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.infografico li:nth-of-type(2) {
+  height: 28%;
+  width: 28%;
+  transform: translate(-67%, -79%);
+}
+.infografico li:nth-of-type(3) {
+  height: 20%;
+  width: 20%;
+  transform: translate(87%, -105%);
+}
+.infografico li:nth-of-type(4) {
+  height: 20%;
+  width: 20%;
+  transform: translate(-128%, 39%);
+}
+.infografico li:nth-of-type(5) {
+  height: 21%;
+  width: 21%;
+  transform: translate(-22%, 118%);
+}
+.infografico li:nth-of-type(6) {
+  height: 27%;
+  width: 27%;
+  transform: translate(91%, 53%);
+}
+
+.item:hover {
+  /* transform: scale(1.05); */
+  height: 104%;
+  width: 104%;
+  margin-left: -2%;
+  margin-top: -2%;
+}
+
+.quotes {
+  position: absolute;
+  top: 0;
+  /* display: none; */
+}
+
+.quotes img {
+  width: 120px;
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+}
+
+.quotes div {
+  width: 200px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* rotação das linhas de chamada */
+.rot_x {
+  transform: rotateX(180deg);
+}
+.rot_y {
+  transform: rotateY(180deg);
+}
+.rot_z {
+  transform: rotateZ(180deg);
+}
+
+.alinha_esq {
+text-align: left;
+}
+.alinha_esq div {
+  margin-left: 30px;
+}
+.alinha_dir {
+  text-align: right;
+}
+.alinha_dir div{
+  text-align: right;
+  margin-right: 30px;
+}
+.infografico li:first-of-type .quotes {
+  left: 152%;
+  top: -14%;
+}
+.infografico li:nth-of-type(2) .quotes {
+  right: 106%;
+  top: -7%;
+}
+.infografico li:nth-of-type(3) .quotes {
+  left: 105%;
+  top: -35%;
+}
+.infografico li:nth-of-type(4) .quotes {
+  right: 100%;
+  top: -40%;
+}
+/* .infografico li:nth-of-type(5) .quotes {
+  left: 100%;
+  top: 85%;
+} */
+.infografico li:nth-of-type(5) .quotes {
+  right: 108%;
+  top: 59%;
+}
+.infografico li:nth-of-type(6) .quotes {
+  left: 102%;
+  top: 68%;
+}
+
+
+svg {
+  z-index: 10;
+}
+
+#linha-4 {
+  display: none;
+}
+
+/* modal */
+.blur {
+  -webkit-filter: url(#blur-filter);
+  filter: url(#blur-filter);
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.video-modal {
+  background-color: rgba(16, 40, 56, .9);
+}
+
+.video-modal .emoldurado {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.video-modal .modal-dialog {
+  max-width: 640px;
+}
+.modal.fade.video-modal .modal-dialog {
+  transform: scale(.8);
+}
+.modal.show.video-modal .modal-dialog {
+  transform: none;
+}
+
+.video-modal .modal-content {
+  background-color: transparent;
+  border: 0;
+}
+.video-modal .modal-body {
+  padding: 0;
+}
+.video-modal p {
+  color: #fff;
+  font-style: italic;
+}
+.video-modal button {
+  float: right;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.video-modal .material-icons {
+  font-size: 2rem;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+  .quotes {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .infografico ul {
+    width: 760px;
+    height: 760px;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  h2{
+    margin-bottom: 2rem;
+  }
+  .intro {
+    padding-top: 2rem;
+  }
+  .item {
+    font-size: 15px;
+  }
+  .emoldurado {
+    border-width: 10px;
+    margin-top: 2rem;
+    margin-bottom: 4.2rem;
+  }
+  .infografico ul {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .infografico svg {
+    position: absolute;
+  }
+  .infografico li {
+    position: relative;
+    width: 160px!important;
+    height: 160px!important;
+    transform: none!important;
+    margin-bottom: -30px;
+  }
+  .infografico li:first-of-type {
+    order: 2;
+    align-self: flex-end;
+  }
+  .infografico li:nth-of-type(2) {
+    order: 1;
+    align-self: flex-start;
+  }
+  .infografico li:nth-of-type(3) {
+    order: 3;
+    align-self: flex-start;
+  }
+  .infografico li:nth-of-type(4) {
+    order: 4;
+    align-self: flex-end;
+  }
+  .infografico li:nth-of-type(5) {
+    order: 5;
+    align-self: flex-start;
+  }
+  .infografico li:nth-of-type(6) {
+    order: 6;
+    align-self: flex-end;
+  }
+  .infografico li:nth-of-type(7) {
+    order: 7;
+    align-self: flex-start;
+  }
+  #linha-1, #linha-2, #linha-3 {
+    display: none;
+  }
+  #linha-4 {
+    display: block;
+  }
+
+}
+
+/*CSS para impressão*/
+@media print {
+  header, footer, aside, nav, iframe, .menu, .hero, .adslot {
+  display: none;
+  }
+  body {
+    background-color: transparent;
+  }
+  * {
+    color: black!important;
+    /* border-color: black!important; */
+  }
+  main {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main p, .sua-resposta {
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .encerramento {
+    padding-top: 0;
+  }
+  .sua-resposta {
+    padding: 0;
+    margin-top: 0;
+  }
+  .pergunta {
+    font-weight: 700;
+  }
+  .intro {
+    background-image: none;
+  }
+  .intro .row {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    padding-bottom: 0;
+    position: relative;
+  }
+  .intro h2 {
+    /* max-width: 60%; */
+    padding-right: 250px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 38px;
+    flex-grow: 1;
+  }
+  .intro img {
+    position: absolute;
+    height: 120px;
+    right: -30px;
+    top: -24px;
+  }
+  .infografico {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .quotes {
+    display: block;
+  }
+  .form-control {
+    background-color: transparent;
+    padding: 0;
+    font-size: 1.1rem;
+    }
+
+
+
+
+}
